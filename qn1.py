@@ -10,7 +10,7 @@ def find_pair(array,given_sum):
         else:
             d[x] = True
             
-IF __NAME__ == '__MAIN__':
+
     
             
 #array = [0,1,2,3,4,5]
