@@ -7,7 +7,7 @@ class Node:
     def __repr__(self):
         return "<Node: {}>".format(self.value)    
 
-class BinaryTree:
+class BaseBinaryTree:
     def __init__(self, values=None):
         self.root = None
         if values:
@@ -26,7 +26,7 @@ class BinaryTree:
     
 level_order = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-tree = BinaryTree(level_order)
+tree = BaseBinaryTree(level_order)
 root = tree.root.value
 child = tree.root.left.right.left.value
 print(child)
